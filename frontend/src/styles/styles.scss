@@ -1,0 +1,9 @@
+@import "./theme.scss";
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: $app-font-size;
+  background-color: $app-bg-color;
+}

@@ -1,0 +1,24 @@
+@import '../styles/variables';
+@import './components/navbar/navbar.variables';
+
+#content {
+  padding-top: $nav-height;
+}
+
+#router-content {
+  padding: 10px;
+  min-width: 800px;
+  max-width: 1000px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+mat-drawer-content {
+  background-color: $app-bg-color;
+}
+
+mat-drawer {
+  border: 1px solid $app-border-color;
+  width: 300px;
+  padding: 10px;
+}

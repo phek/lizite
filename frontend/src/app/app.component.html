@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div id="content" class="mat-light">
+  <mat-drawer-container class="example-container">
+    <mat-drawer #drawer mode="side" opened>I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+      <div id="router-content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

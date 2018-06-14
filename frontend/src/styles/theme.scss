@@ -1,0 +1,32 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* Main Colors */
+$app-main-primary: $mat-grey;
+$app-main-accent: $mat-light-green;
+$app-main-warn: $mat-red;
+
+/* Default Theme */
+$app-primary: mat-palette($app-main-primary, 800);
+$app-accent:  mat-palette($app-main-accent, 400);
+$app-warn:    mat-palette($app-main-warn, 400);
+$app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
+
+@include angular-material-theme($app-theme);
+
+/* Light Theme */
+$app-light-primary: mat-palette($app-main-primary, 300);
+$app-light-theme: mat-light-theme($app-light-primary, $app-accent, $app-warn);
+
+.mat-light {
+  @include angular-material-theme($app-light-theme);
+}
+
+/* Font */
+$app-font: mat-typography-config(
+  $font-family: 'Open Sans, monospace',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(14px, 24px, 500)
+);
+
+@include mat-core($app-font);

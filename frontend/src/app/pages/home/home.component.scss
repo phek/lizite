@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+#feed {
+  display: flex;
+
+  #middle_feed {
+    flex: 1;
+    padding: 0 10px;
+
+    mat-card-subtitle {
+      margin-top: -16px;
+    }
+  }
+
+  #right_menu{
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid $app-border-color;
+  }
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

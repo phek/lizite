@@ -1,0 +1,41 @@
+@import '../../../styles/variables.scss';
+@import "./navbar.variables";
+
+#toolbar {
+  display: flex;
+  width: calc(100% - 20px);
+  background-color: $app-primary-color;
+  position: fixed;
+  font-size: $app-font-size;
+  height: $nav-height;
+  z-index: 1000;
+  padding: 0 10px;
+
+  .container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  img {
+    height: 44%;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  #user_nav {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  #user_nav span {
+    margin-right: 20px;
+  }
+}

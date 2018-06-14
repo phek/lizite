@@ -1,0 +1,7 @@
+<div>
+<span
+  [ngStyle]="!hover ? {borderColor: _color, color: _color} :
+  {borderColor: _color, color: _color, backgroundColor: _color + '1A'}"
+  (mouseover)="hover=true"
+  (mouseleave)="hover=false"><ng-content></ng-content></span>
+</div>

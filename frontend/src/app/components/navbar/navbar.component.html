@@ -1,0 +1,15 @@
+<nav id="toolbar">
+  <div class="container">
+    <img src="assets/images/lizite_light.png">
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="spacer"></span>
+
+    <div *ngIf="userState | async as user" id="user_nav">
+      <span *ngIf="user.loggedIn">{{user.username}}</span>
+      <app-nav-button (click)="!user.loggedIn ? login() : logout()">
+        {{!user.loggedIn ? 'Login' : 'Logout'}}
+      </app-nav-button>
+    </div>
+  </div>
+</nav>
